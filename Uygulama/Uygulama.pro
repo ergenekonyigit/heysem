@@ -13,8 +13,26 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    durakekleotobus.cpp \
+    durakeklemetro.cpp \
+    durakeklevapur.cpp \
+    hatekleotobus.cpp \
+    hateklemetro.cpp \
+    hateklevapur.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    durakekleotobus.h \
+    durakeklemetro.h \
+    durakeklevapur.h \
+    hatekleotobus.h \
+    hateklemetro.h \
+    hateklevapur.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    durakekleotobus.ui \
+    durakeklemetro.ui \
+    durakeklevapur.ui \
+    hatekleotobus.ui \
+    hateklemetro.ui \
+    hateklevapur.ui

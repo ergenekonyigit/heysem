@@ -1,13 +1,13 @@
-#ifndef METRO_H
-#define METRO_H
+#ifndef VAPUR_H
+#define VAPUR_H
 
 #include <QObject>
 
-class Metro : public QObject
+class Vapur : public QObject
 {
   Q_OBJECT
 public:
-  explicit Metro(QObject *parent = 0);
+  explicit Vapur(QObject *parent = 0);
 
   QString aracIdOku() const;
   QString durakAdiOku() const;
@@ -30,4 +30,4 @@ private:
 
 };
 
-#endif // METRO_H
+#endif // VAPUR_H

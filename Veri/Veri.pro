@@ -4,23 +4,26 @@
 #
 #-------------------------------------------------
 
-QT       -= gui
+QT       += core gui sql
 
 TARGET = Veri
 TEMPLATE = lib
 
 DEFINES += VERI_LIBRARY
 
-SOURCES += veritabani.cpp \
+SOURCES += \
     otobus.cpp \
     metro.cpp \
-    denizaraclari.cpp
+    vapur.cpp \
+    veritabani.cpp
 
-HEADERS += veritabani.h\
+HEADERS +=\
         veri_global.h \
+    graf.h \
     otobus.h \
     metro.h \
-    denizaraclari.h
+    vapur.h \
+    veritabani.h
 
 unix {
     target.path = /usr/lib
