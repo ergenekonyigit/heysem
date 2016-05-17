@@ -16,9 +16,20 @@ public:
   explicit HatEkleOtobus(Otobus *otbs=NULL, QWidget *parent = 0);
   ~HatEkleOtobus();
 
+  bool yeniKayitMiOku() const;
+  void yeniKayitMiAta(bool value);
+
+signals:
+  void yeniKayitDegisti(bool value);
+
+private slots:
+  void on_pushButton_clicked();
+
 private:
   Ui::HatEkleOtobus *ui;
   Otobus *u_ptrOtobus;
+
+  bool u_bYeniKayitMi;
 };
 
 #endif // HATEKLEOTOBUS_H

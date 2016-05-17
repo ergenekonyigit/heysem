@@ -36,3 +36,10 @@ FORMS    += mainwindow.ui \
     hateklemetro.ui \
     hatekleotobus.ui \
     hateklevapur.ui
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Veri/release/ -lVeri
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Veri/debug/ -lVeri
+else:unix: LIBS += -L$$OUT_PWD/../Veri/ -lVeri
+
+INCLUDEPATH += $$PWD/../Veri
+DEPENDPATH += $$PWD/../Veri

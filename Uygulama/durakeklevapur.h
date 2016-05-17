@@ -16,9 +16,20 @@ public:
   explicit DurakEkleVapur(Vapur *vpr=NULL, QWidget *parent = 0);
   ~DurakEkleVapur();
 
+  bool yeniKayitMiOku() const;
+  void yeniKayitMiAta(bool value);
+
+signals:
+  void yeniKayitDegisti(bool value);
+
+private slots:
+  void on_pshEkle_clicked();
+
 private:
   Ui::DurakEkleVapur *ui;
   Vapur *u_ptrVapur;
+
+  bool u_bYeniKayitMi;
 };
 
 #endif // DURAKEKLEVAPUR_H

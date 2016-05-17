@@ -2,8 +2,8 @@
 #define VERITABANI_H
 
 #include <QObject>
-#include <QSqlDatabase>
-#include <QSqlQuery>
+#include <QtSql/QSqlDatabase>
+#include <QtSql/QSqlQuery>
 #include <QVariant>
 #include <QList>
 
@@ -11,7 +11,9 @@
 #include "otobus.h"
 #include "vapur.h"
 
-class VeriTabani : public QObject
+#include "veri_global.h"
+
+class VERISHARED_EXPORT VeriTabani : public QObject
 {
   Q_OBJECT
 private:

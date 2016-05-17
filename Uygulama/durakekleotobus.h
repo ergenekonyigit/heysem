@@ -16,9 +16,20 @@ public:
   explicit DurakEkleOtobus(Otobus *otbs=NULL, QWidget *parent = 0);
   ~DurakEkleOtobus();
 
+  bool yeniKayitMiOku() const;
+  void yeniKayitMiAta(bool value);
+
+signals:
+  void yeniKayitDegisti(bool value);
+
+private slots:
+  void on_pshEkle_clicked();
+
 private:
   Ui::DurakEkleOtobus *ui;
   Otobus *u_ptrOtobus;
+
+  bool u_bYeniKayitMi;
 };
 
 #endif // DURAKEKLEOTOBUS_H
