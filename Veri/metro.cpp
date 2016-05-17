@@ -27,20 +27,32 @@ QString Metro::semtAdiOku() const
 
 void Metro::aracIdAta(const QString &value)
 {
-  this->u_strAracId = value;
+  if (this->u_strAracId == value)
+    return;
+  u_strAracId = value;
+  this->aracIdDegisti(u_strAracId);
 }
 
 void Metro::durakAdiAta(const QString &value)
 {
-  this->u_strDurakAdi = value;
+  if (this->u_strDurakAdi == value)
+    return;
+  u_strDurakAdi = value;
+  this->aracIdDegisti(u_strDurakAdi);
 }
 
 void Metro::hatAdiAta(const QString &value)
 {
-  this->u_strHatAdi = value;
+  if (this->u_strHatAdi == value)
+    return;
+  u_strHatAdi = value;
+  this->aracIdDegisti(u_strHatAdi);
 }
 
 void Metro::semtAdiAta(const QString &value)
 {
-  this->u_strSemtAdi = value;
+  if (this->u_strSemtAdi == value)
+    return;
+  u_strSemtAdi = value;
+  this->aracIdDegisti(u_strSemtAdi);
 }

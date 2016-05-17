@@ -5,6 +5,7 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QVariant>
+#include <QList>
 
 #include "metro.h"
 #include "otobus.h"
@@ -34,7 +35,6 @@ public slots:
   void durakSilVapur(Vapur *silinecekDurak);
 
 
-
   void hatEkleMetro(Metro *eklenecekHat);
   void hatEkleOtobus(Otobus *eklenecekHat);
   void hatEkleVapur(Vapur *eklenecekHat);
@@ -47,10 +47,12 @@ public slots:
   void hatSilOtobus(Otobus *silinecekHat);
   void hatSilVapur(Vapur *silinecekHat);
 
-
-
 public:
   static VeriTabani *veriTabaniOku();
+
+  QList<Metro*> aracBulMetro(QString aracid);
+  QList<Otobus*> aracBulOtobus(QString aracid);
+  QList<Vapur*> aracBulVapur(QString aracid);
 };
 
 #endif // VERITABANI_H

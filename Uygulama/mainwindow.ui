@@ -23,58 +23,6 @@
    <layout class="QGridLayout" name="gridLayout_3">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="2" column="1">
-       <spacer name="horizontalSpacer_9">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="1" column="2">
-       <spacer name="horizontalSpacer_4">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLabel" name="label">
-        <property name="font">
-         <font>
-          <family>Helvetica Neue</family>
-          <pointsize>120</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>heysem</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="1">
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
       <item row="3" column="1">
        <widget class="QLabel" name="label_2">
         <property name="font">
@@ -101,6 +49,32 @@
         </property>
        </spacer>
       </item>
+      <item row="1" column="2">
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="1">
+       <spacer name="horizontalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
       <item row="5" column="1">
        <widget class="QLabel" name="label_4">
         <property name="font">
@@ -110,20 +84,7 @@
          </font>
         </property>
         <property name="text">
-         <string>v0.0.1</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="1">
-       <widget class="QLabel" name="label_3">
-        <property name="font">
-         <font>
-          <family>Helvetica Neue</family>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>20.03.2016</string>
+         <string>v0.0.2</string>
         </property>
        </widget>
       </item>
@@ -140,37 +101,50 @@
         </property>
        </spacer>
       </item>
-     </layout>
-    </item>
-    <item row="0" column="1">
-     <layout class="QGridLayout" name="gridLayout_2">
-      <item row="5" column="1">
-       <spacer name="horizontalSpacer_6">
+      <item row="1" column="1">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>120</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>heysem</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>27.04.2016</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <spacer name="verticalSpacer">
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Vertical</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>40</width>
-          <height>20</height>
+          <width>20</width>
+          <height>40</height>
          </size>
         </property>
        </spacer>
       </item>
-      <item row="11" column="1">
-       <widget class="QPushButton" name="pushButton_5">
-        <property name="font">
-         <font>
-          <family>Helvetica Neue</family>
-          <pointsize>15</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Deneme</string>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="1">
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="10" column="2">
        <spacer name="horizontalSpacer_7">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -183,24 +157,7 @@
         </property>
        </spacer>
       </item>
-      <item row="4" column="1">
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="font">
-         <font>
-          <family>Helvetica Neue</family>
-          <pointsize>15</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-          <underline>false</underline>
-          <strikeout>false</strikeout>
-         </font>
-        </property>
-        <property name="text">
-         <string>Hat Ekle</string>
-        </property>
-       </widget>
-      </item>
-      <item row="12" column="1">
+      <item row="14" column="2">
        <spacer name="horizontalSpacer_10">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -213,116 +170,7 @@
         </property>
        </spacer>
       </item>
-      <item row="1" column="1" rowspan="2">
-       <widget class="QPushButton" name="pushButton_1">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="font">
-         <font>
-          <family>Helvetica Neue</family>
-          <pointsize>15</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Durak Ekle</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="0">
-       <spacer name="horizontalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="8" column="1">
-       <widget class="QPushButton" name="pushButton_4">
-        <property name="font">
-         <font>
-          <family>Helvetica Neue</family>
-          <pointsize>15</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Hat Görüntüle</string>
-        </property>
-       </widget>
-      </item>
-      <item row="13" column="1">
-       <widget class="QPushButton" name="pushButton">
-        <property name="font">
-         <font>
-          <family>Helvetica Neue</family>
-          <pointsize>15</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Hakkımızda</string>
-        </property>
-       </widget>
-      </item>
-      <item row="14" column="1">
-       <spacer name="verticalSpacer_4">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="3" column="1">
-       <spacer name="horizontalSpacer_5">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="10" column="1">
-       <spacer name="horizontalSpacer_8">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="6" column="2">
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="6" column="1">
+      <item row="9" column="2">
        <widget class="QPushButton" name="pushButton_3">
         <property name="enabled">
          <bool>true</bool>
@@ -344,8 +192,236 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
+      <item row="9" column="3">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="9" column="0">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="11" column="2">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Hat Görüntüle</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QComboBox" name="cmbDurakGor">
+        <item>
+         <property name="text">
+          <string>Otobüs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Metro</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Vapur</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="12" column="2">
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="15" column="2">
+       <widget class="QPushButton" name="pushButton">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Hakkımızda</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
        <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="11" column="1">
+       <widget class="QComboBox" name="cmbHatGor">
+        <item>
+         <property name="text">
+          <string>Otobüs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Metro</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Vapur</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="13" column="2">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Deneme</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="pushButton_1">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>15</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Durak Ekle</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="cmbDurakEkle">
+        <item>
+         <property name="text">
+          <string>Otobüs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Metro</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Vapur</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="cmbHatEkle">
+        <item>
+         <property name="text">
+          <string>Otobüs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Metro</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Vapur</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="7" column="2">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>15</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="text">
+         <string>Hat Ekle</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="16" column="2">
+       <spacer name="verticalSpacer_4">
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
@@ -392,9 +468,27 @@
     <addaction name="actionMetro_Hatti_Ekle"/>
     <addaction name="actionVapur_Hatti_Ekle"/>
    </widget>
+   <widget class="QMenu" name="menuDurak_G_r_nt_le">
+    <property name="title">
+     <string>Durak Görüntüle</string>
+    </property>
+    <addaction name="actionOtob_s"/>
+    <addaction name="actionMetro_Dura_G_r_nt_le"/>
+    <addaction name="actionVapur_Dura_G_r_nt_le"/>
+   </widget>
+   <widget class="QMenu" name="menuHat_G_r_nt_le">
+    <property name="title">
+     <string>Hat Görüntüle</string>
+    </property>
+    <addaction name="actionOtob_s_Hatt_G_r_nt_le"/>
+    <addaction name="actionMetro_Hatt_G_r_nt_le"/>
+    <addaction name="actionVapur_Hatt_G_r_nt_le"/>
+   </widget>
    <addaction name="menuDosya"/>
    <addaction name="menuDurak_Ekle"/>
    <addaction name="menuHat_Ekle"/>
+   <addaction name="menuDurak_G_r_nt_le"/>
+   <addaction name="menuHat_G_r_nt_le"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionDeneme1">
@@ -414,32 +508,32 @@
   </action>
   <action name="actionOtobus_Duragi_Ekle">
    <property name="text">
-    <string>Otobus Duragi Ekle</string>
+    <string>Otobüs Durağı Ekle</string>
    </property>
   </action>
   <action name="actionMetro_Duragi_Ekle">
    <property name="text">
-    <string>Metro Duragi Ekle</string>
+    <string>Metro Durağı Ekle</string>
    </property>
   </action>
   <action name="actionVapur_Duragi_Ekle">
    <property name="text">
-    <string>Vapur Duragi Ekle</string>
+    <string>Vapur Durağı Ekle</string>
    </property>
   </action>
   <action name="actionOtobus_Hatti_Ekle">
    <property name="text">
-    <string>Otobus Hatti Ekle</string>
+    <string>Otobüs Hattı Ekle</string>
    </property>
   </action>
   <action name="actionMetro_Hatti_Ekle">
    <property name="text">
-    <string>Metro Hatti Ekle</string>
+    <string>Metro Hattı Ekle</string>
    </property>
   </action>
   <action name="actionVapur_Hatti_Ekle">
    <property name="text">
-    <string>Vapur Hatti Ekle</string>
+    <string>Vapur Hattı Ekle</string>
    </property>
   </action>
   <action name="actionCikis">
@@ -447,8 +541,48 @@
     <string>Cikis</string>
    </property>
   </action>
+  <action name="actionOtob_s">
+   <property name="text">
+    <string>Otobüs Durağı Görüntüle</string>
+   </property>
+  </action>
+  <action name="actionMetro_Dura_G_r_nt_le">
+   <property name="text">
+    <string>Metro Durağı Görüntüle</string>
+   </property>
+  </action>
+  <action name="actionVapur_Dura_G_r_nt_le">
+   <property name="text">
+    <string>Vapur Durağı Görüntüle</string>
+   </property>
+  </action>
+  <action name="actionOtob_s_Hatt_G_r_nt_le">
+   <property name="text">
+    <string>Otobüs Hattı Görüntüle</string>
+   </property>
+  </action>
+  <action name="actionMetro_Hatt_G_r_nt_le">
+   <property name="text">
+    <string>Metro Hattı Görüntüle</string>
+   </property>
+  </action>
+  <action name="actionVapur_Hatt_G_r_nt_le">
+   <property name="text">
+    <string>Vapur Hattı Görüntüle</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>cmbDurakEkle</tabstop>
+  <tabstop>pushButton_1</tabstop>
+  <tabstop>cmbHatEkle</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>cmbDurakGor</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>cmbHatGor</tabstop>
+  <tabstop>pushButton_4</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

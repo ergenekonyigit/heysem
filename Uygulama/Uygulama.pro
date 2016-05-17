@@ -14,25 +14,25 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    durakekleotobus.cpp \
     durakeklemetro.cpp \
+    durakekleotobus.cpp \
     durakeklevapur.cpp \
-    hatekleotobus.cpp \
     hateklemetro.cpp \
+    hatekleotobus.cpp \
     hateklevapur.cpp
 
 HEADERS  += mainwindow.h \
-    durakekleotobus.h \
     durakeklemetro.h \
+    durakekleotobus.h \
     durakeklevapur.h \
-    hatekleotobus.h \
     hateklemetro.h \
+    hatekleotobus.h \
     hateklevapur.h
 
 FORMS    += mainwindow.ui \
-    durakekleotobus.ui \
     durakeklemetro.ui \
+    durakekleotobus.ui \
     durakeklevapur.ui \
-    hatekleotobus.ui \
     hateklemetro.ui \
+    hatekleotobus.ui \
     hateklevapur.ui

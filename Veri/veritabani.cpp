@@ -242,10 +242,10 @@ void VeriTabani::hatDuzenleVapur(Vapur *duzenlenecekHat)
                                where aracid=? and durakadi=? and hatadi=? and semtadi=?" \
                                                                                        );
 
- duzenlemeVapurKomutu.bindValue(0, duzenlenecekHat->aracIdOku());
- duzenlemeVapurKomutu.bindValue(1, duzenlenecekHat->durakAdiOku());
- duzenlemeVapurKomutu.bindValue(2, duzenlenecekHat->hatAdiOku());
- duzenlemeVapurKomutu.bindValue(3, duzenlenecekHat->semtAdiOku());
+  duzenlemeVapurKomutu.bindValue(0, duzenlenecekHat->aracIdOku());
+  duzenlemeVapurKomutu.bindValue(1, duzenlenecekHat->durakAdiOku());
+  duzenlemeVapurKomutu.bindValue(2, duzenlenecekHat->hatAdiOku());
+  duzenlemeVapurKomutu.bindValue(3, duzenlenecekHat->semtAdiOku());
 
   duzenlemeVapurKomutu.exec();
 }
@@ -295,4 +295,70 @@ VeriTabani *VeriTabani::veriTabaniOku()
       u_ptrVeriTabani = new VeriTabani;
     }
   return u_ptrVeriTabani;
+}
+
+QList<Metro *> VeriTabani::aracBulMetro(QString aracid)
+{
+  QList<Metro *> sonuc;
+  QSqlQuery bulmaKomutu;
+  bulmaKomutu.prepare("select aracid, durakadi, hatadi \
+                      from metro \
+                      where aracid = ?" \
+                      );
+  bulmaKomutu.bindValue(0, aracid);
+  bulmaKomutu.exec();
+
+  while (bulmaKomutu.next()) {
+      Metro *metro_i = new Metro(this);
+      metro_i->aracIdAta(bulmaKomutu.value(0).toString());
+      metro_i->durakAdiAta(bulmaKomutu.value(1).toString());
+      metro_i->hatAdiAta(bulmaKomutu.value(2).toString());
+      sonuc.append(metro_i);
+    }
+
+  return sonuc;
+}
+
+QList<Otobus *> VeriTabani::aracBulOtobus(QString aracid)
+{
+  QList<Otobus *> sonuc;
+  QSqlQuery bulmaKomutu;
+  bulmaKomutu.prepare("select aracid, durakadi, hatadi \
+                      from otobus \
+                      where aracid = ?" \
+                      );
+  bulmaKomutu.bindValue(0, aracid);
+  bulmaKomutu.exec();
+
+  while (bulmaKomutu.next()) {
+      Otobus *otobus_i = new Otobus(this);
+      otobus_i->aracIdAta(bulmaKomutu.value(0).toString());
+      otobus_i->durakAdiAta(bulmaKomutu.value(1).toString());
+      otobus_i->hatAdiAta(bulmaKomutu.value(2).toString());
+      sonuc.append(otobus_i);
+    }
+
+  return sonuc;
+}
+
+QList<Vapur *> VeriTabani::aracBulVapur(QString aracid)
+{
+  QList<Vapur *> sonuc;
+  QSqlQuery bulmaKomutu;
+  bulmaKomutu.prepare("select aracid, durakadi, hatadi \
+                      from vapur \
+                      where aracid = ?" \
+                      );
+  bulmaKomutu.bindValue(0, aracid);
+  bulmaKomutu.exec();
+
+  while (bulmaKomutu.next()) {
+      Vapur *vapur_i = new Vapur(this);
+      vapur_i->aracIdAta(bulmaKomutu.value(0).toString());
+      vapur_i->durakAdiAta(bulmaKomutu.value(1).toString());
+      vapur_i->hatAdiAta(bulmaKomutu.value(2).toString());
+      sonuc.append(vapur_i);
+    }
+
+  return sonuc;
 }
