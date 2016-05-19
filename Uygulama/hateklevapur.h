@@ -1,14 +1,14 @@
 #ifndef HATEKLEVAPUR_H
 #define HATEKLEVAPUR_H
 
-#include <QMainWindow>
+#include <QDialog>
 #include "../Veri/vapur.h"
 
 namespace Ui {
   class HatEkleVapur;
 }
 
-class HatEkleVapur : public QMainWindow
+class HatEkleVapur : public QDialog
 {
   Q_OBJECT
 

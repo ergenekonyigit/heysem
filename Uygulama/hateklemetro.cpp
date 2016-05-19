@@ -3,7 +3,7 @@
 #include "../Veri/veritabani.h"
 
 HatEkleMetro::HatEkleMetro(Metro *mtr, QWidget *parent) :
-  QMainWindow(parent),
+  QDialog(parent),
   ui(new Ui::HatEkleMetro)
 {
   ui->setupUi(this);
@@ -12,6 +12,8 @@ HatEkleMetro::HatEkleMetro(Metro *mtr, QWidget *parent) :
   u_bYeniKayitMi = true;
 
   if (u_ptrMetro != NULL) {
+      connect(ui->edtDurakID, SIGNAL(textEdited(QString)), u_ptrMetro, SLOT(durakIdAta(QString)));
+      connect(ui->edtHatID, SIGNAL(textEdited(QString)), u_ptrMetro, SLOT(hatIdAta(QString)));
       connect(ui->edtDurakAdi, SIGNAL(textEdited(QString)), u_ptrMetro, SLOT(durakAdiAta(QString)));
       connect(ui->edtHatAdi, SIGNAL(textEdited(QString)), u_ptrMetro, SLOT(hatAdiAta(QString)));
       connect(ui->edtSemtAdi, SIGNAL(textEdited(QString)), u_ptrMetro, SLOT(semtAdiAta(QString)));

@@ -1,14 +1,14 @@
 #ifndef DURAKEKLEOTOBUS_H
 #define DURAKEKLEOTOBUS_H
 
-#include <QMainWindow>
+#include <QDialog>
 #include "../Veri/otobus.h"
 
 namespace Ui {
   class DurakEkleOtobus;
 }
 
-class DurakEkleOtobus : public QMainWindow
+class DurakEkleOtobus : public QDialog
 {
   Q_OBJECT
 

@@ -1,14 +1,14 @@
 #ifndef DURAKEKLEVAPUR_H
 #define DURAKEKLEVAPUR_H
 
-#include <QMainWindow>
+#include <QDialog>
 #include "../Veri/vapur.h"
 
 namespace Ui {
   class DurakEkleVapur;
 }
 
-class DurakEkleVapur : public QMainWindow
+class DurakEkleVapur : public QDialog
 {
   Q_OBJECT
 

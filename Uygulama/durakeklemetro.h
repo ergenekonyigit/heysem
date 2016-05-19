@@ -1,14 +1,14 @@
 #ifndef DURAKEKLEMETRO_H
 #define DURAKEKLEMETRO_H
 
-#include <QMainWindow>
+#include <QDialog>
 #include "../Veri/metro.h"
 
 namespace Ui {
   class DurakEkleMetro;
 }
 
-class DurakEkleMetro : public QMainWindow
+class DurakEkleMetro : public QDialog
 {
   Q_OBJECT
 

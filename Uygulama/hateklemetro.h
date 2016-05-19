@@ -1,14 +1,14 @@
 #ifndef HATEKLEMETRO_H
 #define HATEKLEMETRO_H
 
-#include <QMainWindow>
+#include <QDialog>
 #include "../Veri/metro.h"
 
 namespace Ui {
   class HatEkleMetro;
 }
 
-class HatEkleMetro : public QMainWindow
+class HatEkleMetro : public QDialog
 {
   Q_OBJECT
 

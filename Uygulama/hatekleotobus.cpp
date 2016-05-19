@@ -3,7 +3,7 @@
 #include "../Veri/veritabani.h"
 
 HatEkleOtobus::HatEkleOtobus(Otobus *otbs, QWidget *parent) :
-  QMainWindow(parent),
+  QDialog(parent),
   ui(new Ui::HatEkleOtobus)
 {
   ui->setupUi(this);
@@ -12,6 +12,8 @@ HatEkleOtobus::HatEkleOtobus(Otobus *otbs, QWidget *parent) :
   u_bYeniKayitMi = true;
 
   if (u_ptrOtobus != NULL) {
+      connect(ui->edtDurakID, SIGNAL(textEdited(QString)), u_ptrOtobus, SLOT(durakIdAta(QString)));
+      connect(ui->edtHatID, SIGNAL(textEdited(QString)), u_ptrOtobus, SLOT(hatIdAta(QString)));
       connect(ui->edtDurakAdi, SIGNAL(textEdited(QString)), u_ptrOtobus, SLOT(durakAdiAta(QString)));
       connect(ui->edtHatAdi, SIGNAL(textEdited(QString)), u_ptrOtobus, SLOT(hatAdiAta(QString)));
       connect(ui->edtSemtAdi, SIGNAL(textEdited(QString)), u_ptrOtobus, SLOT(semtAdiAta(QString)));

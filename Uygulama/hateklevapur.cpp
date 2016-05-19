@@ -3,7 +3,7 @@
 #include "../Veri/veritabani.h"
 
 HatEkleVapur::HatEkleVapur(Vapur *vpr, QWidget *parent) :
-  QMainWindow(parent),
+  QDialog(parent),
   ui(new Ui::HatEkleVapur)
 {
   ui->setupUi(this);
@@ -12,6 +12,8 @@ HatEkleVapur::HatEkleVapur(Vapur *vpr, QWidget *parent) :
   u_bYeniKayitMi = true;
 
   if (u_ptrVapur != NULL) {
+      connect(ui->edtDurakID, SIGNAL(textEdited(QString)), u_ptrVapur, SLOT(durakIdAta(QString)));
+      connect(ui->edtHatID, SIGNAL(textEdited(QString)), u_ptrVapur, SLOT(hatIdAta(QString)));
       connect(ui->edtDurakAdi, SIGNAL(textEdited(QString)), u_ptrVapur, SLOT(durakAdiAta(QString)));
       connect(ui->edtHatAdi, SIGNAL(textEdited(QString)), u_ptrVapur, SLOT(hatAdiAta(QString)));
       connect(ui->edtSemtAdi, SIGNAL(textEdited(QString)), u_ptrVapur, SLOT(semtAdiAta(QString)));

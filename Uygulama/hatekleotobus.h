@@ -1,14 +1,14 @@
 #ifndef HATEKLEOTOBUS_H
 #define HATEKLEOTOBUS_H
 
-#include <QMainWindow>
+#include <QDialog>
 #include "../Veri/otobus.h"
 
 namespace Ui {
   class HatEkleOtobus;
 }
 
-class HatEkleOtobus : public QMainWindow
+class HatEkleOtobus : public QDialog
 {
   Q_OBJECT
 
