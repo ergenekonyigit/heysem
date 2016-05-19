@@ -10,6 +10,16 @@ QString Vapur::aracIdOku() const
   return u_strAracId;
 }
 
+QString Vapur::durakIdOku() const
+{
+  return u_strDurakId;
+}
+
+QString Vapur::hatIdOku() const
+{
+  return u_strHatId;
+}
+
 QString Vapur::durakAdiOku() const
 {
   return u_strDurakAdi;
@@ -31,6 +41,22 @@ void Vapur::aracIdAta(const QString &value)
     return;
   u_strAracId = value;
   this->aracIdDegisti(u_strAracId);
+}
+
+void Vapur::durakIdAta(const QString &value)
+{
+  if (this->u_strDurakId == value)
+    return;
+  u_strDurakId = value;
+  this->durakIdDegisti(u_strDurakId);
+}
+
+void Vapur::hatIdAta(const QString &value)
+{
+  if (this->u_strHatId == value)
+    return;
+  u_strHatId = value;
+  this->hatIdDegisti(u_strHatId);
 }
 
 void Vapur::durakAdiAta(const QString &value)

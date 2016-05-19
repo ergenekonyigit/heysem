@@ -55,6 +55,15 @@ public:
   QList<Metro*> aracBulMetro(QString aracid);
   QList<Otobus*> aracBulOtobus(QString aracid);
   QList<Vapur*> aracBulVapur(QString aracid);
+
+  QList<Metro*> durakBulMetro(QString durakid);
+  QList<Otobus*> durakBulOtobus(QString durakid);
+  QList<Vapur*> durakBulVapur(QString durakid);
+
+  QList<Metro*> hatBulMetro(QString hatid);
+  QList<Otobus*> hatBulOtobus(QString hatid);
+  QList<Vapur*> hatBulVapur(QString hatid);
+
 };
 
 #endif // VERITABANI_H
