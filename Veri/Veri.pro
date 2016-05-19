@@ -3,8 +3,8 @@
 # Project created by QtCreator 2016-03-02T09:46:57
 #
 #-------------------------------------------------
-
-QT       += core gui sql
+QT -= gui
+QT += core sql
 
 TARGET = Veri
 TEMPLATE = lib
