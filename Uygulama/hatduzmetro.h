@@ -1,20 +1,20 @@
-#ifndef HATEKLEMETRO_H
-#define HATEKLEMETRO_H
+#ifndef HATDUZMETRO_H
+#define HATDUZMETRO_H
 
 #include <QDialog>
 #include "../Veri/metro.h"
 
 namespace Ui {
-  class HatEkleMetro;
+  class HatDuzMetro;
 }
 
-class HatEkleMetro : public QDialog
+class HatDuzMetro : public QDialog
 {
   Q_OBJECT
 
 public:
-  explicit HatEkleMetro(Metro *mtr=NULL, QWidget *parent = 0);
-  ~HatEkleMetro();
+  explicit HatDuzMetro(Metro *mtr=NULL, QWidget *parent = 0);
+  ~HatDuzMetro();
 
   bool yeniKayitMiOku() const;
   void yeniKayitMiAta(bool value);
@@ -28,10 +28,10 @@ private slots:
   void on_pshIpt_clicked();
 
 private:
-  Ui::HatEkleMetro *ui;
+  Ui::HatDuzMetro *ui;
   Metro *u_ptrMetro;
 
   bool u_bYeniKayitMi;
 };
 
-#endif // HATEKLEMETRO_H
+#endif // HATDUZMETRO_H

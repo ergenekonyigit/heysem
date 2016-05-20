@@ -1,20 +1,20 @@
-#ifndef DURAKEKLEVAPUR_H
-#define DURAKEKLEVAPUR_H
+#ifndef DURAKDUZVAPUR_H
+#define DURAKDUZVAPUR_H
 
 #include <QDialog>
 #include "../Veri/vapur.h"
 
 namespace Ui {
-  class DurakEkleVapur;
+  class DurakDuzVapur;
 }
 
-class DurakEkleVapur : public QDialog
+class DurakDuzVapur : public QDialog
 {
   Q_OBJECT
 
 public:
-  explicit DurakEkleVapur(Vapur *vpr=NULL, QWidget *parent = 0);
-  ~DurakEkleVapur();
+  explicit DurakDuzVapur(Vapur *vpr=NULL, QWidget *parent = 0);
+  ~DurakDuzVapur();
 
   bool yeniKayitMiOku() const;
   void yeniKayitMiAta(bool value);
@@ -28,10 +28,10 @@ private slots:
   void on_pshIpt_clicked();
 
 private:
-  Ui::DurakEkleVapur *ui;
+  Ui::DurakDuzVapur *ui;
   Vapur *u_ptrVapur;
 
   bool u_bYeniKayitMi;
 };
 
-#endif // DURAKEKLEVAPUR_H
+#endif // DURAKDUZVAPUR_H

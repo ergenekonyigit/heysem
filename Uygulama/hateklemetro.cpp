@@ -45,3 +45,8 @@ void HatEkleMetro::on_pshEkle_clicked()
       VeriTabani::veriTabaniOku()->hatDuzenleMetro(u_ptrMetro);
     }
 }
+
+void HatEkleMetro::on_pshIpt_clicked()
+{
+    QDialog::reject();
+}

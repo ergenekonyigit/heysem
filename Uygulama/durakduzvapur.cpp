@@ -1,10 +1,10 @@
-#include "durakeklevapur.h"
-#include "ui_durakeklevapur.h"
+#include "durakduzvapur.h"
+#include "ui_durakduzvapur.h"
 #include "../Veri/veritabani.h"
 
-DurakEkleVapur::DurakEkleVapur(Vapur *vpr, QWidget *parent) :
+DurakDuzVapur::DurakDuzVapur(Vapur *vpr, QWidget *parent) :
   QDialog(parent),
-  ui(new Ui::DurakEkleVapur)
+  ui(new Ui::DurakDuzVapur)
 {
   ui->setupUi(this);
 
@@ -21,23 +21,23 @@ DurakEkleVapur::DurakEkleVapur(Vapur *vpr, QWidget *parent) :
     }
 }
 
-DurakEkleVapur::~DurakEkleVapur()
+DurakDuzVapur::~DurakDuzVapur()
 {
   delete ui;
 }
 
-bool DurakEkleVapur::yeniKayitMiOku() const
+bool DurakDuzVapur::yeniKayitMiOku() const
 {
   return u_bYeniKayitMi;
 }
 
-void DurakEkleVapur::yeniKayitMiAta(bool value)
+void DurakDuzVapur::yeniKayitMiAta(bool value)
 {
   u_bYeniKayitMi = value;
   yeniKayitDegisti(u_bYeniKayitMi);
 }
 
-void DurakEkleVapur::on_pshEkle_clicked()
+void DurakDuzVapur::on_pshEkle_clicked()
 {
   if (u_bYeniKayitMi) {
       VeriTabani::veriTabaniOku()->durakEkleVapur(u_ptrVapur);
@@ -46,7 +46,7 @@ void DurakEkleVapur::on_pshEkle_clicked()
     }
 }
 
-void DurakEkleVapur::on_pshIpt_clicked()
+void DurakDuzVapur::on_pshIpt_clicked()
 {
     QDialog::reject();
 }

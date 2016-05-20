@@ -25,6 +25,8 @@ signals:
 private slots:
   void on_pshEkle_clicked();
 
+  void on_pshIpt_clicked();
+
 private:
   Ui::HatEkleVapur *ui;
   Vapur *u_ptrVapur;

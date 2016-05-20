@@ -1,10 +1,10 @@
-#include "durakeklemetro.h"
-#include "ui_durakeklemetro.h"
+#include "durakduzmetro.h"
+#include "ui_durakduzmetro.h"
 #include "../Veri/veritabani.h"
 
-DurakEkleMetro::DurakEkleMetro(Metro *mtr, QWidget *parent) :
+DurakDuzMetro::DurakDuzMetro(Metro *mtr, QWidget *parent) :
   QDialog(parent),
-  ui(new Ui::DurakEkleMetro)
+  ui(new Ui::DurakDuzMetro)
 {
   ui->setupUi(this);
 
@@ -21,23 +21,23 @@ DurakEkleMetro::DurakEkleMetro(Metro *mtr, QWidget *parent) :
     }
 }
 
-DurakEkleMetro::~DurakEkleMetro()
+DurakDuzMetro::~DurakDuzMetro()
 {
   delete ui;
 }
 
-bool DurakEkleMetro::yeniKayitMiOku() const
+bool DurakDuzMetro::yeniKayitMiOku() const
 {
   return u_bYeniKayitMi;
 }
 
-void DurakEkleMetro::yeniKayitMiAta(bool value)
+void DurakDuzMetro::yeniKayitMiAta(bool value)
 {
   u_bYeniKayitMi = value;
   yeniKayitDegisti(u_bYeniKayitMi);
 }
 
-void DurakEkleMetro::on_pshEkle_clicked()
+void DurakDuzMetro::on_pshEkle_clicked()
 {
   if (u_bYeniKayitMi) {
       VeriTabani::veriTabaniOku()->durakEkleMetro(u_ptrMetro);
@@ -47,7 +47,7 @@ void DurakEkleMetro::on_pshEkle_clicked()
   ui->pshEkle->clearFocus();
 }
 
-void DurakEkleMetro::on_pshIpt_clicked()
+void DurakDuzMetro::on_pshIpt_clicked()
 {
     QDialog::reject();
 }

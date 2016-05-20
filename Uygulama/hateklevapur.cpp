@@ -45,3 +45,8 @@ void HatEkleVapur::on_pshEkle_clicked()
       VeriTabani::veriTabaniOku()->hatDuzenleVapur(u_ptrVapur);
     }
 }
+
+void HatEkleVapur::on_pshIpt_clicked()
+{
+    QDialog::reject();
+}

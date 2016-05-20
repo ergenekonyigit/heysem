@@ -1,10 +1,10 @@
-#include "hatekleotobus.h"
-#include "ui_hatekleotobus.h"
+#include "hatduzotobus.h"
+#include "ui_hatduzotobus.h"
 #include "../Veri/veritabani.h"
 
-HatEkleOtobus::HatEkleOtobus(Otobus *otbs, QWidget *parent) :
+HatDuzOtobus::HatDuzOtobus(Otobus *otbs, QWidget *parent) :
   QDialog(parent),
-  ui(new Ui::HatEkleOtobus)
+  ui(new Ui::HatDuzOtobus)
 {
   ui->setupUi(this);
 
@@ -21,23 +21,23 @@ HatEkleOtobus::HatEkleOtobus(Otobus *otbs, QWidget *parent) :
     }
 }
 
-HatEkleOtobus::~HatEkleOtobus()
+HatDuzOtobus::~HatDuzOtobus()
 {
   delete ui;
 }
 
-bool HatEkleOtobus::yeniKayitMiOku() const
+bool HatDuzOtobus::yeniKayitMiOku() const
 {
   return u_bYeniKayitMi;
 }
 
-void HatEkleOtobus::yeniKayitMiAta(bool value)
+void HatDuzOtobus::yeniKayitMiAta(bool value)
 {
   u_bYeniKayitMi = value;
   yeniKayitDegisti(u_bYeniKayitMi);
 }
 
-void HatEkleOtobus::on_pushButton_clicked()
+void HatDuzOtobus::on_pushButton_clicked()
 {
   if (u_bYeniKayitMi) {
       VeriTabani::veriTabaniOku()->hatEkleOtobus(u_ptrOtobus);
@@ -46,7 +46,7 @@ void HatEkleOtobus::on_pushButton_clicked()
     }
 }
 
-void HatEkleOtobus::on_pushButton_2_clicked()
+void HatDuzOtobus::on_pushButton_2_clicked()
 {
     QDialog::reject();
 }

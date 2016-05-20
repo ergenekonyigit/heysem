@@ -12,6 +12,8 @@ DurakEkleOtobus::DurakEkleOtobus(Otobus *otbs, QWidget *parent) :
   u_bYeniKayitMi = true;
 
   if (u_ptrOtobus != NULL) {
+
+
       connect(ui->edtDurakID, SIGNAL(textEdited(QString)), u_ptrOtobus, SLOT(durakIdAta(QString)));
       connect(ui->edtHatID, SIGNAL(textEdited(QString)), u_ptrOtobus, SLOT(hatIdAta(QString)));
       connect(ui->edtDurakAdi, SIGNAL(textEdited(QString)), u_ptrOtobus, SLOT(durakAdiAta(QString)));
@@ -44,4 +46,9 @@ void DurakEkleOtobus::on_pshEkle_clicked()
     } else {
       VeriTabani::veriTabaniOku()->durakDuzenleOtobus(u_ptrOtobus);
     }
+}
+
+void DurakEkleOtobus::on_pshIpt_clicked()
+{
+    QDialog::reject();
 }

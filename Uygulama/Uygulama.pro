@@ -19,7 +19,19 @@ SOURCES += main.cpp\
     durakeklevapur.cpp \
     hateklemetro.cpp \
     hatekleotobus.cpp \
-    hateklevapur.cpp
+    hateklevapur.cpp \
+    durakgormetro.cpp \
+    durakgorotobus.cpp \
+    durakgorvapur.cpp \
+    hatgormetro.cpp \
+    hatgorotobus.cpp \
+    hatgorvapur.cpp \
+    durakduzmetro.cpp \
+    durakduzotobus.cpp \
+    durakduzvapur.cpp \
+    hatduzmetro.cpp \
+    hatduzotobus.cpp \
+    hatduzvapur.cpp
 
 HEADERS  += mainwindow.h \
     durakeklemetro.h \
@@ -27,7 +39,19 @@ HEADERS  += mainwindow.h \
     durakeklevapur.h \
     hateklemetro.h \
     hatekleotobus.h \
-    hateklevapur.h
+    hateklevapur.h \
+    durakgormetro.h \
+    durakgorotobus.h \
+    durakgorvapur.h \
+    hatgormetro.h \
+    hatgorotobus.h \
+    hatgorvapur.h \
+    durakduzmetro.h \
+    durakduzotobus.h \
+    durakduzvapur.h \
+    hatduzmetro.h \
+    hatduzotobus.h \
+    hatduzvapur.h
 
 FORMS    += mainwindow.ui \
     durakeklemetro.ui \
@@ -35,7 +59,19 @@ FORMS    += mainwindow.ui \
     durakeklevapur.ui \
     hateklemetro.ui \
     hatekleotobus.ui \
-    hateklevapur.ui
+    hateklevapur.ui \
+    durakgormetro.ui \
+    durakgorotobus.ui \
+    durakgorvapur.ui \
+    hatgormetro.ui \
+    hatgorotobus.ui \
+    hatgorvapur.ui \
+    durakduzmetro.ui \
+    durakduzotobus.ui \
+    durakduzvapur.ui \
+    hatduzmetro.ui \
+    hatduzotobus.ui \
+    hatduzvapur.ui
 
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Veri/release/ -lVeri
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Veri/debug/ -lVeri
