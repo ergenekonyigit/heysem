@@ -31,7 +31,8 @@ SOURCES += main.cpp\
     durakduzvapur.cpp \
     hatduzmetro.cpp \
     hatduzotobus.cpp \
-    hatduzvapur.cpp
+    hatduzvapur.cpp \
+    hakkinda.cpp
 
 HEADERS  += mainwindow.h \
     durakeklemetro.h \
@@ -51,7 +52,8 @@ HEADERS  += mainwindow.h \
     durakduzvapur.h \
     hatduzmetro.h \
     hatduzotobus.h \
-    hatduzvapur.h
+    hatduzvapur.h \
+    hakkinda.h
 
 FORMS    += mainwindow.ui \
     durakeklemetro.ui \
@@ -71,7 +73,8 @@ FORMS    += mainwindow.ui \
     durakduzvapur.ui \
     hatduzmetro.ui \
     hatduzotobus.ui \
-    hatduzvapur.ui
+    hatduzvapur.ui \
+    hakkinda.ui
 
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Veri/release/ -lVeri
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Veri/debug/ -lVeri

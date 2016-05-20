@@ -538,7 +538,7 @@
     <property name="title">
      <string>Durak Görüntüle</string>
     </property>
-    <addaction name="actionOtob_s"/>
+    <addaction name="actionOtob_s_Dura_G_r_nt_le"/>
     <addaction name="actionMetro_Dura_G_r_nt_le"/>
     <addaction name="actionVapur_Dura_G_r_nt_le"/>
    </widget>
@@ -554,7 +554,7 @@
     <property name="title">
      <string>Durak Düzenle</string>
     </property>
-    <addaction name="actionOtob_s_Dura_G_r_nt_le"/>
+    <addaction name="actionOtob_s_Dura_D_zenle"/>
     <addaction name="actionMetro_Dura_D_zenle"/>
     <addaction name="actionVapur_Dura_D_zenle"/>
    </widget>
@@ -575,21 +575,6 @@
    <addaction name="menuHat_D_zenle"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionDeneme1">
-   <property name="text">
-    <string>deneme1</string>
-   </property>
-  </action>
-  <action name="actionDeneme2">
-   <property name="text">
-    <string>deneme2</string>
-   </property>
-  </action>
-  <action name="actionDeneme3">
-   <property name="text">
-    <string>deneme3</string>
-   </property>
-  </action>
   <action name="actionOtobus_Duragi_Ekle">
    <property name="text">
     <string>Otobüs Durağı Ekle</string>
@@ -625,11 +610,6 @@
     <string>Cikis</string>
    </property>
   </action>
-  <action name="actionOtob_s">
-   <property name="text">
-    <string>Otobüs Durağı Görüntüle</string>
-   </property>
-  </action>
   <action name="actionMetro_Dura_G_r_nt_le">
    <property name="text">
     <string>Metro Durağı Görüntüle</string>
@@ -655,11 +635,6 @@
     <string>Vapur Hattı Görüntüle</string>
    </property>
   </action>
-  <action name="actionOtob_s_Dura_G_r_nt_le">
-   <property name="text">
-    <string>Otobüs Durağı Düzenle</string>
-   </property>
-  </action>
   <action name="actionMetro_Dura_D_zenle">
    <property name="text">
     <string>Metro Durağı Düzenle</string>
@@ -683,6 +658,16 @@
   <action name="actionVapur_Hatt_D_zenle">
    <property name="text">
     <string>Vapur Hattı Düzenle</string>
+   </property>
+  </action>
+  <action name="actionOtob_s_Dura_D_zenle">
+   <property name="text">
+    <string>Otobüs Durağı Düzenle</string>
+   </property>
+  </action>
+  <action name="actionOtob_s_Dura_G_r_nt_le">
+   <property name="text">
+    <string>Otobüs Durağı Görüntüle</string>
    </property>
   </action>
  </widget>
